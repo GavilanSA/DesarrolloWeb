@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav class="nav">
+            <ul class="nav-lista">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#proyecto">Unidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Hero -->
+        <section id="hero" class="hero">
+            <h1>Bienvenido a mi Proyecto Capstone</h1>
+            <p>Laboratorio 1 de Desarrollo de Aplicaciones Web.</p>
+        </section>
+
+        <!-- Sección 2:  Tabla -->
+        <section id="proyecto" class="caracteristicas">
+            <h2>Resumen de Unidades</h2>
+            <table border="1" class="tabla-basica">
+                <thead>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Contenido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Front-End (HTML, CSS, Flexbox)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Desarrollo en React</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Back-End con Django y MySQL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección 3: Contacto con Formulario -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="correo">Correo:</label>
+                    <!-- type="email" y required -->
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <!-- minlength de 10 caracteres y required -->
+                    <textarea id="mensaje" name="mensaje" required minlength="10" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Autónoma - Campus Talca</p>
+    </footer>
+</body>
+</html>
