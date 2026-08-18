@@ -15,16 +15,22 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <!--  boton de tema y saludo -->
+        <div class="controles-tema">
+            <span id="saludo" class="texto-saludo"></span>
+            <button id="boton-tema" class="btn-tema">☀️ Modo claro</button>
+        </div>
     </header>
+    
 
     <main>
-        <!-- Sección 1: Hero -->
+        <!-- Hero -->
         <section id="hero" class="hero">
-            <h1>Bienvenido a mi Proyecto Capstone</h1>
-            <p>Laboratorio 1 de Desarrollo de Aplicaciones Web.</p>
+            <h1>Bienvenido a mi Proyecto Lab</h1>
+            <p>Laboratorio de Desarrollo de Aplicaciones Web.</p>
         </section>
 
-        <!-- Sección 2:  Tabla -->
+        <!-- Tabla -->
         <section id="proyecto" class="caracteristicas">
             <h2>Resumen de Unidades</h2>
             <table border="1" class="tabla-basica">
@@ -51,10 +57,9 @@
             </table>
         </section>
 
-        <!-- Sección 3: Contacto con Formulario -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="">
+            <form id="formulario-contacto" action="">
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -62,17 +67,16 @@
                 
                 <div class="campo">
                     <label for="correo">Correo:</label>
-                    <!-- type="email" y required -->
                     <input type="email" id="correo" name="correo" required>
                 </div>
                 
                 <div class="campo">
                     <label for="mensaje">Mensaje:</label>
-                    <!-- minlength de 10 caracteres y required -->
                     <textarea id="mensaje" name="mensaje" required minlength="10" rows="4"></textarea>
                 </div>
                 
                 <button type="submit">Enviar</button>
+                <p id="aviso"></p>
             </form>
         </section>
     </main>
@@ -80,5 +84,6 @@
     <footer>
         <p>Universidad Autónoma - Campus Talca</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
